@@ -15,7 +15,7 @@ engine.setProperty('voice', voices[1].id)
 engine.setProperty('rate', 100)
 
 # loading pre trained model
-model = load_model('Final_Model.h5')
+model = load_model('CNN/Final_Model.h5')
 
 def predict_digit(img):
     test_image = img.reshape(-1,28,28,1)
